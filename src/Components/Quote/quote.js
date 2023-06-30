@@ -12,7 +12,7 @@ const options = {
 export const dailyQuotes=async()=>{
 
     try {
-        const {response:{response}}= await axios.get(Url,options);
+        const response= await axios.get(Url,options);
         return response;
     } catch (error) {
         console.log(error);

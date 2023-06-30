@@ -5,13 +5,24 @@ function Homequote() {
     const[quote,setQuote]=useState(' ')
     useEffect(()=>{
         dailyQuotes()
-        .then((data)=>{
+        .then(({data})=>{
             setQuote(data)
-            console.log(data);
+            
         })
     },[])
+
+    let dayAuthor=quote?.author
+    let dayQuote=quote?.quote
+  
   return (
-    <div>Homequote</div>
+    <div>
+      <div>
+        {dayAuthor}
+      </div>
+      <div>
+        {dayQuote}
+      </div>
+    </div>
   )
 }
 

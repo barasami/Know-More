@@ -21,9 +21,9 @@ function Homeword() {
 
 
     //first
-    let allfirst=first?.map(({date,word,mean,source})=>{
+    let allfirst=first?.map(({date,word,mean,source,id})=>{
         return(
-            <div key={mean}>
+            <div key={id}>
                 <div>{date}</div>
                 <div>{source}</div>
                 <div>{word}</div>
