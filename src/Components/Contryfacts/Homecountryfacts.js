@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { defaultCountries } from './contrydata'
 
 function Homecountryfacts() {
-    const[country,setCountry]=useState('')
+    const[country,setCountry]=useState([])
     useEffect(()=>{
         defaultCountries()
         .then(({data})=>{
@@ -11,21 +11,21 @@ function Homecountryfacts() {
         })
     },[])
 
-    // const countryNews=country?.map(({unMember,region,independent,landlocked})=>{
-    //     return(
-    //         <tr>
-    //             <td>{region}</td>
-    //             <td>{unMember}</td>
-    //             <td>{independent}</td>
-    //             <td>{landlocked}</td>
 
-    //         </tr>
-    //     )
-    // })
+    const AllcountryData=country?.map(({flag,region})=>{
+      return(
+        <div>
+          <div>
+            <div><img src={flag} alt={region}/></div>
+          </div>
+        </div>
+      )
+    })
+    
   return (
     <div>
         <div>
-            {/* {countryNews} */}
+          {AllcountryData}
         </div>
     </div>
   )
