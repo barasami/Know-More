@@ -66,20 +66,22 @@ function Homeword() {
         )
     })
   return (
-    <div>
-        {loading ? <CircularProgress className='circular' color='inherit'/> : 
-        <div>
-            <div>
-                {allfirst}
-            </div>
-            <div>
-                {allsecond}
-            </div>
-            <div>
-                {allthird}
-            </div>
-            
-        </div>}
+    <div className='hword'>
+       <div className='word'>
+            {loading ? <CircularProgress className='circular' color='inherit'/> : 
+                <div>
+                    <div>
+                        {allfirst}
+                    </div>
+                    <div>
+                        {allsecond}
+                    </div>
+                    <div>
+                        {allthird}
+                    </div>
+                    
+                </div>}
+       </div>
     </div>
   )
 }

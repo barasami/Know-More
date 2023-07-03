@@ -3,3 +3,34 @@
     top: 50%;
     position: fixed;
 }
+.img{
+    height: 15%;
+    width:15%
+}
+.names{
+    font-weight: lighter;
+    color: rgb(69, 69, 240);
+}
+.population{
+    font-weight: lighter;
+    color: rgb(69, 69, 240);
+}
+.region{
+    font-weight: lighter;
+    color: rgb(69, 69, 240);
+
+}
+.area{
+    font-weight: lighter;
+    color: rgb(69, 69, 240); 
+}
+.countryfacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facts{
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}

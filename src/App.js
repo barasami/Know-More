@@ -13,7 +13,7 @@ function App() {
      <Fragment>
       <Navigation/>
       <Routes>
-        <Route path='/Dayword' element={<Homeword/>}/>
+        <Route path='/' element={<Homeword/>}/>
         <Route path='/Quotes' element={<Homequote/>}/>
         <Route path='/Countryfact'element={<Homecountryfacts/>}/>
       </Routes>

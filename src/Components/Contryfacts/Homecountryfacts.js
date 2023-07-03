@@ -11,33 +11,51 @@ function Homecountryfacts() {
         defaultCountries()
         .then(({data})=>{
             setCountry(data)
+            console.log(data);
             setLoading(false)
         })
     },[])
 
 
-    const AllcountryData=country?.map(({flag,region,name})=>{
+    const AllcountryData=country?.map(({flag,region,name,subregion,population,area})=>{
       const official=name.official
       const common=name.common
       return(
-        <div>
+        <div >
           <div>
-            <div><img src={flag} alt={region}/></div>
             <div>
-              {official} <span>{common}</span>
+              <img className='img' src={flag} alt={region}/>
             </div>
+            <div>
+              <div>Official Name <span className='names'>{official}</span></div>
+              <div>Common Name <span className='names'>{common}</span></div>
+            </div>
+            <div>
+              <div>Region<span className='region'>{region}</span></div>
+              <div>Subregion<span className='region'>{subregion}</span></div>
+            </div>
+            <div>
+              <div>Area<span className='area'>{area}</span></div>
+            </div>
+            <div>
+              <div>Population<span className='population'>{population}</span></div>
+            </div>
+            
+            
           </div>
         </div>
       )
     })
     
   return (
-    <div>
+    <div className='countryfacts'>
+      <div>
         {load ? <CircularProgress color='inherit' className='circular'/> : 
-        <div>
-          {AllcountryData}
-        </div>
-      }
+          <div>
+            {AllcountryData}
+          </div>
+        }
+      </div>
     </div>
   )
 }

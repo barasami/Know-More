@@ -10,7 +10,7 @@ function Navigation() {
     <div className='nav'>
         <div className='navigation'>
             <div className='links'>
-              <Link to='/Dayword' className='innerlinks'>Master Language</Link>
+              <Link to='/' className='innerlinks'>Master Language</Link>
             </div>
             <div className='links'>
               <Link to='/Countryfact' className='innerlinks'>Country Facts</Link>

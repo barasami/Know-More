@@ -20,16 +20,18 @@ function Homequote() {
     let dayQuote=quote?.quote
   
   return (
-    <div>
-      {loading ? <CircularProgress color='inherit' className='circular'/> : 
-      <div>
+    <div className='hquotes'>
+      <div className='quotes'>
+        {loading ? <CircularProgress color='inherit' className='circular'/> : 
         <div>
-          {dayAuthor}
-        </div>
-        <div>
-          {dayQuote}
-        </div>
-      </div>}
+          <div>
+            {dayAuthor}
+          </div>
+          <div>
+            {dayQuote}
+          </div>
+        </div>}
+      </div>
     </div>
   )
 }

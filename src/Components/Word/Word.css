@@ -3,3 +3,11 @@
     top: 50%;
     position: fixed;
 }
+.hword{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.word{
+
+}
