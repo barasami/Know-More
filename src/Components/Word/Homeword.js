@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { dayWord } from './word'
+import './Word.css'
+
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 function Homeword() {
     const[word,setWord]=useState(' ')
+    const [loading,setLoading]=useState(false)
 
     useEffect(()=>{
+        setLoading(true)
         dayWord()
         .then(({data})=>{
             setWord(data)
-            console.log(data);
+            setLoading(false);
         })
     },[])
 
@@ -61,15 +67,19 @@ function Homeword() {
     })
   return (
     <div>
+        {loading ? <CircularProgress className='circular' color='inherit'/> : 
         <div>
-            {allfirst}
-        </div>
-        <div>
-            {allsecond}
-        </div>
-        <div>
-            {allthird}
-        </div>
+            <div>
+                {allfirst}
+            </div>
+            <div>
+                {allsecond}
+            </div>
+            <div>
+                {allthird}
+            </div>
+            
+        </div>}
     </div>
   )
 }

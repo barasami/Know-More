@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { dailyQuotes } from './quote'
+import CircularProgress from '@mui/material/CircularProgress';
+import './Quote.css'
 
 function Homequote() {
     const[quote,setQuote]=useState(' ')
+    const[loading,setLoading]=useState(false)
     useEffect(()=>{
+       setLoading(true)
         dailyQuotes()
         .then(({data})=>{
             setQuote(data)
+            setLoading(false)
             
         })
     },[])
@@ -16,12 +21,15 @@ function Homequote() {
   
   return (
     <div>
+      {loading ? <CircularProgress color='inherit' className='circular'/> : 
       <div>
-        {dayAuthor}
-      </div>
-      <div>
-        {dayQuote}
-      </div>
+        <div>
+          {dayAuthor}
+        </div>
+        <div>
+          {dayQuote}
+        </div>
+      </div>}
     </div>
   )
 }

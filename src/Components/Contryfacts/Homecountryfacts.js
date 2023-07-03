@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { defaultCountries } from './contrydata'
+import CircularProgress from '@mui/material/CircularProgress';
+import './Country.css'
 
 function Homecountryfacts() {
     const[country,setCountry]=useState([])
+    const[load,setLoading]=useState(false)
     useEffect(()=>{
+        setLoading(true)
         defaultCountries()
         .then(({data})=>{
             setCountry(data)
-            console.log(data);
+            setLoading(false)
         })
     },[])
 
@@ -29,9 +33,11 @@ function Homecountryfacts() {
     
   return (
     <div>
+        {load ? <CircularProgress color='inherit' className='circular'/> : 
         <div>
           {AllcountryData}
         </div>
+      }
     </div>
   )
 }
