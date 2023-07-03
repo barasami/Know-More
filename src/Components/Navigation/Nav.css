@@ -1,0 +1,30 @@
+.nav{
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3em;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+.links{
+    display:inline-block;
+}
+.innerlinks{
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.innerlinks:hover{
+    border-bottom: 2px solid purple;
+}
+.innerlinks:hover:active{
+    color: purple;
+}
+
+@media screen and(min-height:600px) {
+    
+}

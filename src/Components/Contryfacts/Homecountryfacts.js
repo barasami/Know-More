@@ -12,11 +12,16 @@ function Homecountryfacts() {
     },[])
 
 
-    const AllcountryData=country?.map(({flag,region})=>{
+    const AllcountryData=country?.map(({flag,region,name})=>{
+      const official=name.official
+      const common=name.common
       return(
         <div>
           <div>
             <div><img src={flag} alt={region}/></div>
+            <div>
+              {official} <span>{common}</span>
+            </div>
           </div>
         </div>
       )
