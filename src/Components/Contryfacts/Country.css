@@ -11,18 +11,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .allcountry{
+    margin-top: .4em;
+    margin-bottom: .4em;
     margin-left: 20%;
     margin-right: 20%;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: rgb(238, 236, 236);
     
 }
 .names{
     font-weight: lighter;
     color: rgb(69, 69, 240);
+}
+.officialname{
+    font-weight: lighter;
+    color: rgb(69, 69, 240);
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 .population{
     font-weight: lighter;
@@ -43,9 +53,13 @@
     justify-content: center;
 }
 .myimg{
-    display: flex;
+    margin-top: .3em;
+    margin-left: 15%;
+    margin-right: 15%;
     align-items: center;
     justify-content: center;
+    
+    
 }
 .facts{
     margin-left: 20%;

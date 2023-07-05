@@ -56,7 +56,7 @@ function Homecountryfacts() {
               <img className='img' src={flag} alt={region}/>
             </div>
             <div className='nameclass'>
-              <div className='fname'>Official Name <span className='names'>{official}</span></div>
+              <div className='fname'>Official Name <span className='officialname'>{official}</span></div>
               <div className='oname'>Common Name <span className='names'>{common}</span></div>
             </div>
             <div className='capital'>
