@@ -4,8 +4,8 @@
     position: fixed;
 }
 .img{
-    height: 15%;
-    width:15%
+    height: 10%;
+    width:10%;
 }
 .allCountries{
     display: flex;
@@ -15,6 +15,10 @@
 .allcountry{
     margin-left: 20%;
     margin-right: 20%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
 }
 .names{
     font-weight: lighter;
@@ -38,6 +42,11 @@
     align-items: center;
     justify-content: center;
 }
+.myimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .facts{
     margin-left: 20%;
     margin-right: 20%;
@@ -53,11 +62,68 @@
     color: rgb(69, 69, 240);
 }
 .nameclass{
-  
+ margin-left: 15%;
+ margin-right: 15%;
+ align-items: center;
+ justify-content: center;
 
 }
+
 .calling{
     font-weight: lighter;
     color: rgb(69, 69, 240);
 
+}
+.capital{
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+
+}
+.regions{
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+
+}
+.areas{
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.people{
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+
+}
+.country{
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+
+}
+.code{
+    margin-left: 15%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+
+}
+.ccode{
+    display: flex;
+    
+}
+.border{
+    display: flex;
+}
+.citys{
+    display: flex;
+    padding-right: .1em;
 }

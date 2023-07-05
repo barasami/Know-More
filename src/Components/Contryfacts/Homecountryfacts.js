@@ -52,31 +52,31 @@ function Homecountryfacts() {
       return(
         <div className='allCountries'>
           <div className='allcountry'>
-            <div>
+            <div className='myimg'>
               <img className='img' src={flag} alt={region}/>
             </div>
             <div className='nameclass'>
-              <div>Official Name <span className='names'>{official}</span></div>
-              <div>Common Name <span className='names'>{common}</span></div>
+              <div className='fname'>Official Name <span className='names'>{official}</span></div>
+              <div className='oname'>Common Name <span className='names'>{common}</span></div>
             </div>
-            <div>
-              <div>Capital City <span className='city'>{capitalCity}</span></div>
+            <div className='capital'>
+              <div className='citys'>Capital City <span className='city'>{capitalCity}</span></div>
             </div>
-            <div>
+            <div className='regions'>
               <div>Region<span className='region'>{region}</span></div>
               <div>Subregion<span className='region'>{subregion}</span></div>
             </div>
-            <div>
+            <div className='areas'>
               <div>Area<span className='area'>{area}</span></div>
             </div>
-            <div>
+            <div className='people'>
               <div>Population<span className='population'>{population}</span></div>
             </div>
-            <div>
-              <div>Border Countries <span className='countries'>{bordercountries}</span></div>
+            <div className='country'>
+              <div className='border'>Border Countries <span className='countries'>{bordercountries}</span></div>
             </div>
-            <div>
-              <div>Calling Code <span className='calling'>{callingcode}</span></div>
+            <div className='code'>
+              <div className='ccode'>Calling Code <span className='calling'>{callingcode}</span></div>
             </div>
             
             
