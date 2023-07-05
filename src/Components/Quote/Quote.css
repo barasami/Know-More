@@ -11,3 +11,20 @@
 .quotes{
     
 }
+.allfirst{
+    margin-top: 2em;
+}
+.allsecond{
+    margin-top: 6em;
+}
+.author{
+    text-transform: capitalize;
+    color: seagreen;
+}
+.text{
+    color: purple;
+    font-style: italic;
+    font-size:larger ;
+    padding-left: .3em;
+
+}

@@ -7,7 +7,31 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
+.date{
+    color: seagreen;
+    text-transform: capitalize;
+    padding: .7em;
+
 }
 .word{
+   text-transform: capitalize;
+    padding-left: .1em;
+
+}
+.mean{
+    color: purple;
+    padding: .1em;
+}
+.first{
+    margin-bottom: .4em;
+}
+.second{
+    margin-bottom: .4em;
+}
+.third{
+    margin-bottom: .4em;
+
 
 }

@@ -27,26 +27,24 @@ function Homeword() {
 
 
     //first
-    let allfirst=first?.map(({date,word,mean,source,id})=>{
+    let allfirst=first?.map(({date,word,mean,id})=>{
         return(
             <div key={id}>
-                <div>{date}</div>
-                <div>{source}</div>
-                <div>{word}</div>
-                <div>{mean}</div>
+                <div className='date'>{date}</div>
+                <div className='word'>{word}</div>
+                <div className='mean'>{mean}</div>
 
             </div>
         )
     })
 
     //second
-    let allsecond=second?.map(({date,word,mean,source})=>{
+    let allsecond=second?.map(({date,word,mean})=>{
         return(
             <div key={mean}>
-                <div>{date}</div>
-                <div>{source}</div>
-                <div>{word}</div>
-                <div>{mean}</div>
+                <div className='date'>{date}</div>
+                <div className='word'>{word}</div>
+                <div className='mean'>{mean}</div>
 
             </div>
         )
@@ -54,13 +52,12 @@ function Homeword() {
 
     //third
 
-    let allthird=third?.map(({date,word,mean,source})=>{
+    let allthird=third?.map(({date,word,mean})=>{
         return(
             <div key={mean}>
-                <div>{date}</div>
-                <div>{source}</div>
-                <div>{word}</div>
-                <div>{mean}</div>
+                <div className='date'>{date}</div>
+                <div className='word'>{word}</div>
+                <div className='mean'>{mean}</div>
 
             </div>
         )
@@ -70,13 +67,13 @@ function Homeword() {
        <div className='word'>
             {loading ? <CircularProgress className='circular' color='inherit'/> : 
                 <div>
-                    <div>
+                    <div className='first'>
                         {allfirst}
                     </div>
-                    <div>
+                    <div className='second'>
                         {allsecond}
                     </div>
-                    <div>
+                    <div className='third'>
                         {allthird}
                     </div>
                     
