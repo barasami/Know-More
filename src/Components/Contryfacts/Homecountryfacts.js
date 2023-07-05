@@ -17,7 +17,26 @@ function Homecountryfacts() {
     },[])
 
 
-    const AllcountryData=country?.map(({flag,region,name,subregion,population,area})=>{
+    const AllcountryData=country?.map(({flag,region,name,subregion,population,area,borders,capital})=>{
+
+      let bordercountries=borders?.map((data)=>{
+        return(
+          <div>
+            <div>
+              {data}
+            </div>
+          </div>
+        )
+      })
+      let capitalCity=capital?.map((data)=>{
+        return(
+          <div>
+            <div>
+              {data}
+            </div>
+          </div>
+        )
+      })
       const official=name.official
       const common=name.common
       return(
@@ -31,6 +50,9 @@ function Homecountryfacts() {
               <div>Common Name <span className='names'>{common}</span></div>
             </div>
             <div>
+              <div>Capital City <span className='city'>{capitalCity}</span></div>
+            </div>
+            <div>
               <div>Region<span className='region'>{region}</span></div>
               <div>Subregion<span className='region'>{subregion}</span></div>
             </div>
@@ -39,6 +61,9 @@ function Homecountryfacts() {
             </div>
             <div>
               <div>Population<span className='population'>{population}</span></div>
+            </div>
+            <div>
+              <div>Border Countries <span className='countries'>{bordercountries}</span></div>
             </div>
             
             
