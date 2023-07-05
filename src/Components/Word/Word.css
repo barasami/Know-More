@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 .date{
     color: seagreen;
@@ -19,6 +18,13 @@
    text-transform: capitalize;
     padding-left: .1em;
 
+}
+.dailyword{
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+    justify-content: center;
+   
 }
 .mean{
     color: purple;
@@ -34,4 +40,12 @@
     margin-bottom: .4em;
 
 
+}
+.alldata{
+    margin-top: 7%;
+    margin-bottom: 20%;
+    align-items: center;
+    justify-content: center;
+    
+   
 }

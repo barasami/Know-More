@@ -29,7 +29,7 @@ function Homeword() {
     //first
     let allfirst=first?.map(({date,word,mean,id})=>{
         return(
-            <div key={id}>
+            <div key={id} className='dailyword'>
                 <div className='date'>{date}</div>
                 <div className='word'>{word}</div>
                 <div className='mean'>{mean}</div>
@@ -41,7 +41,7 @@ function Homeword() {
     //second
     let allsecond=second?.map(({date,word,mean})=>{
         return(
-            <div key={mean}>
+            <div key={mean} className='dailyword'>
                 <div className='date'>{date}</div>
                 <div className='word'>{word}</div>
                 <div className='mean'>{mean}</div>
@@ -54,7 +54,7 @@ function Homeword() {
 
     let allthird=third?.map(({date,word,mean})=>{
         return(
-            <div key={mean}>
+            <div key={mean} className='dailyword'>
                 <div className='date'>{date}</div>
                 <div className='word'>{word}</div>
                 <div className='mean'>{mean}</div>
@@ -66,7 +66,7 @@ function Homeword() {
     <div className='hword'>
        <div className='word'>
             {loading ? <CircularProgress className='circular' color='inherit'/> : 
-                <div>
+                <div className='alldata'>
                     <div className='first'>
                         {allfirst}
                     </div>

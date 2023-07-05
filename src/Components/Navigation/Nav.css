@@ -24,6 +24,7 @@
 }
 .innerlinks:hover:active{
     color: purple;
+    font-weight: bolder;
 }
 
 @media screen and(min-height:600px) {
