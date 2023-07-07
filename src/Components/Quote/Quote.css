@@ -7,8 +7,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  
 }
 
+.quotes{
+    top: 50%;
+    bottom: 50%;
+    position: fixed;
+}
 .allfirst{
     margin-top: 2em;
 }
@@ -25,4 +31,73 @@
     font-size:larger ;
     padding-left: .3em;
 
+}
+
+@media screen and (max-width:900px) {
+    .text{
+        color: purple;
+        font-style: italic;
+        font-size:larger ;
+        padding-left: .3em;
+    
+    }
+    .quotes{
+        top: 50%;
+        bottom: 50%;
+        position: fixed;
+        font-size: larger;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .text{
+        color: purple;
+        font-style: italic;
+        font-size:large ;
+        padding-left: .3em;
+    
+    }
+    .quotes{
+        font-size: large;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .text{
+        color: purple;
+        font-style: italic;
+        font-size:medium ;
+        padding-left: .3em;
+    
+    }
+    .quotes{
+        font-size: medium;
+    }
+    
+}
+@media screen and (max-width:300px) {
+    .text{
+        color: purple;
+        font-style: italic;
+        font-size:small ;
+        padding-left: .3em;
+    
+    }
+    .quotes{
+        font-size: small;
+    }
+    
+}
+@media screen and (max-width:200px) {
+    .text{
+        color: purple;
+        font-style: italic;
+        font-size:smaller ;
+        padding-left: .3em;
+    
+    }
+    .quotes{
+        font-size: smaller;
+    }
+    
 }
