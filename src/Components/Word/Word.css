@@ -47,5 +47,57 @@
     align-items: center;
     justify-content: center;
     
+    
    
+}
+
+@media screen and (max-width: 900px) {
+    .dailyword{
+        margin-left: 16%;
+        margin-right: 16%;
+        align-items: center;
+        justify-content: center;
+        font-size: large;
+       
+    }
+}
+@media screen and (max-width: 700px) {
+    .dailyword{
+        margin-left: 14%;
+        margin-right: 14%;
+        align-items: center;
+        justify-content: center;
+        font-size: medium;
+       
+    }
+}
+@media screen and (max-width: 500px) {
+    .dailyword{
+        margin-left: 10%;
+        margin-right: 10%;
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+       
+    }
+}
+@media screen and (max-width: 300px) {
+    .dailyword{
+        margin-left: 8%;
+        margin-right: 8%;
+        align-items: center;
+        justify-content: center;
+        font-size: smaller;
+       
+    }
+}
+@media screen and (max-width: 200px) {
+    .dailyword{
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+        justify-content: center;
+        font-size: x-small;
+       
+    }
 }
