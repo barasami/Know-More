@@ -54,6 +54,12 @@
    .navigation{
     display: flex;
    }
+   .link{
+    display: none;
+   }
+   .icon{
+    display: inline-block;
+   }
 }
 @media screen and (max-width:500px) {
     
