@@ -27,6 +27,37 @@
     font-weight: bolder;
 }
 
-@media screen and(min-height:600px) {
+@media screen and (max-width:1200px) {
+    .nav{
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    .nav{
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+       
+    }
+    
+}
+@media screen and (max-width:800px) {
+   .navigation{
+    display: flex;
+   }
+}
+@media screen and (max-width:500px) {
+    
+}
+@media screen and (max-width:300px) {
+    
+}
+@media screen and (max-width:200px) {
     
 }
